@@ -10,6 +10,8 @@ import SwiftUI
 extension Color {
     /// Базовый фон для элементов
     static let elementsBackgound = Color("elementsBackground")
+    /// Красный фон для элементов
+    static let redElementsBackground = Color("redElementsBackground")
     /// Базовый фон для сцен
     static let backgroundColor = Color("backgroundColor")
 }

@@ -20,21 +20,16 @@ struct MainView: View {
             Image.christmasTree
                 .resizable()
                 .frame(width: 250, height: 350)
-                .padding([.leading, .trailing], 16)
                 .padding(.bottom, 70)
-                .shadow(color: .black,
-                        radius: 40,
-                        x: 40,
-                        y: 40)
+                .shadow(color: .black,radius: 40, x: 40, y: 40)
             
             Button {
                 isShownFormView.toggle()
             } label: {
                 Label(LocalConstants.join, image: .emptiness)
             }
-            .padding(.trailing, 7)
             .frame(width: 230, height: 230)
-            .background(Color.elementsBackgound)
+            .background(Color.redElementsBackground)
             .foregroundColor(.white)
             .cornerRadius(200)
             .font(.system(size: 26))
@@ -47,7 +42,6 @@ struct MainView: View {
         .fullScreenCover(isPresented: $isShownFormView) {
             FormFillingView()
         }
-
     }
 }
 
