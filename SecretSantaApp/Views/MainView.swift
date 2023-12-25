@@ -7,24 +7,34 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
+    
+    private struct LocalConstants {
+        static let join = "Присоединится"
+    }
+    
+    @State var isShownFormView: Bool = false
+    
     var body: some View {
         VStack() {
-            Image("christmasTree")
+            Image.christmasTree
                 .resizable()
                 .frame(width: 250, height: 350)
                 .padding([.leading, .trailing], 16)
                 .padding(.bottom, 70)
-                .shadow(color: .black, radius: 40, x: 40, y: 40)
+                .shadow(color: .black,
+                        radius: 40,
+                        x: 40,
+                        y: 40)
             
             Button {
-                print("Происходит магия")
+                isShownFormView.toggle()
             } label: {
-                Label("Присоединиться", image: .emptiness)
+                Label(LocalConstants.join, image: .emptiness)
             }
             .padding(.trailing, 7)
             .frame(width: 230, height: 230)
-            .background(Color("elementsBackground"))
+            .background(Color.elementsBackgound)
             .foregroundColor(.white)
             .cornerRadius(200)
             .font(.system(size: 26))
@@ -33,12 +43,16 @@ struct ContentView: View {
             // TODO: Увеличить область обработки для hitTest()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color("backgroundColor"))
+        .background(Color.backgroundColor)
+        .fullScreenCover(isPresented: $isShownFormView) {
+            FormFillingView()
+        }
+
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }

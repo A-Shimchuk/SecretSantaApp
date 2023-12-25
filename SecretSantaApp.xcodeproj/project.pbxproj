@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6116E0982B34257400885AF2 /* SecretSantaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116E0972B34257400885AF2 /* SecretSantaAppApp.swift */; };
-		6116E09A2B34257400885AF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116E0992B34257400885AF2 /* ContentView.swift */; };
+		6116E09A2B34257400885AF2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116E0992B34257400885AF2 /* MainView.swift */; };
 		6116E09C2B34257600885AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6116E09B2B34257600885AF2 /* Assets.xcassets */; };
 		6116E09F2B34257600885AF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6116E09E2B34257600885AF2 /* Preview Assets.xcassets */; };
 		6116E0A92B34257600885AF2 /* SecretSantaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116E0A82B34257600885AF2 /* SecretSantaAppTests.swift */; };
 		6116E0B32B34257600885AF2 /* SecretSantaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116E0B22B34257600885AF2 /* SecretSantaAppUITests.swift */; };
 		6116E0B52B34257600885AF2 /* SecretSantaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116E0B42B34257600885AF2 /* SecretSantaAppUITestsLaunchTests.swift */; };
 		6116E0C32B3456C900885AF2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116E0C22B3456C900885AF2 /* String.swift */; };
+		6116E0C52B347DA000885AF2 /* FormFillingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116E0C42B347DA000885AF2 /* FormFillingView.swift */; };
+		6192651B2B39761D00307E64 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6192651A2B39761D00307E64 /* Color.swift */; };
+		6192651D2B39771700307E64 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6192651C2B39771700307E64 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,7 @@
 /* Begin PBXFileReference section */
 		6116E0942B34257400885AF2 /* SecretSantaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSantaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6116E0972B34257400885AF2 /* SecretSantaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantaAppApp.swift; sourceTree = "<group>"; };
-		6116E0992B34257400885AF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6116E0992B34257400885AF2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6116E09B2B34257600885AF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6116E09E2B34257600885AF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6116E0A42B34257600885AF2 /* SecretSantaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretSantaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +49,9 @@
 		6116E0B22B34257600885AF2 /* SecretSantaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantaAppUITests.swift; sourceTree = "<group>"; };
 		6116E0B42B34257600885AF2 /* SecretSantaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6116E0C22B3456C900885AF2 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		6116E0C42B347DA000885AF2 /* FormFillingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFillingView.swift; sourceTree = "<group>"; };
+		6192651A2B39761D00307E64 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		6192651C2B39771700307E64 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +104,7 @@
 			children = (
 				6116E0C12B3456B700885AF2 /* Extensions */,
 				6116E0972B34257400885AF2 /* SecretSantaAppApp.swift */,
-				6116E0992B34257400885AF2 /* ContentView.swift */,
+				6116E0C62B347DDF00885AF2 /* Views */,
 				6116E09B2B34257600885AF2 /* Assets.xcassets */,
 				6116E09D2B34257600885AF2 /* Preview Content */,
 			);
@@ -134,8 +140,19 @@
 			isa = PBXGroup;
 			children = (
 				6116E0C22B3456C900885AF2 /* String.swift */,
+				6192651A2B39761D00307E64 /* Color.swift */,
+				6192651C2B39771700307E64 /* Image.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6116E0C62B347DDF00885AF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6116E0C42B347DA000885AF2 /* FormFillingView.swift */,
+				6116E0992B34257400885AF2 /* MainView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6116E0C52B347DA000885AF2 /* FormFillingView.swift in Sources */,
+				6192651D2B39771700307E64 /* Image.swift in Sources */,
+				6192651B2B39761D00307E64 /* Color.swift in Sources */,
 				6116E0C32B3456C900885AF2 /* String.swift in Sources */,
-				6116E09A2B34257400885AF2 /* ContentView.swift in Sources */,
+				6116E09A2B34257400885AF2 /* MainView.swift in Sources */,
 				6116E0982B34257400885AF2 /* SecretSantaAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
